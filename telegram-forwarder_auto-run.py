@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 #    Copyright (c) 2021 Ayush
 #    
 #    This program is free software: you can redistribute it and/or modify  
