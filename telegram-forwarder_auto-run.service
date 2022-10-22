@@ -1,0 +1,17 @@
+# $HOME/.config/systemd/user/
+# https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
+
+[Unit]
+Description=A telegram forwarder that will automatically post message form Another telegram channel / group to Your telegram channel / group
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=30
+StartLimitBurst=100000
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStart=%h/Soft/telegram-forwarder_auto/telegram-forwarder_auto-run.py
+
+[Install]
+WantedBy=multi-user.target
