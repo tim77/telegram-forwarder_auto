@@ -11,7 +11,7 @@ StartLimitBurst=100000
 [Service]
 Type=simple
 Restart=on-failure
-ExecStart=%h/Soft/telegram-forwarder_auto/telegram-forwarder_auto.py
+ExecStart=/opt/telegram-forwarder_auto/telegram-forwarder_auto.py
 
 [Install]
 WantedBy=multi-user.target
