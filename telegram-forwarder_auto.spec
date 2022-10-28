@@ -45,6 +45,7 @@ install -Dpm 0644 app.json -t %{buildroot}/opt/%{name}
 install -Dpm 0644 Procfile -t %{buildroot}/opt/%{name}
 install -Dpm 0644 requirements.txt -t %{buildroot}/opt/%{name}
 install -Dpm 0755 %{name}.py -t %{buildroot}/opt/%{name}
+install -Dpm 0755 pip-install-and-upgrade.sh -t %{buildroot}/opt/%{name}
 
 
 %post
